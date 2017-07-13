@@ -48,6 +48,7 @@ proposal belongs_to:workshop
 ### board references
 board has many:users
 board has many:question
+
 |column|type|
 |:--|--:|
 |user_id|references|
@@ -56,6 +57,7 @@ board has many:question
 
 ### question
 question has many:answer
+
 |column|type|
 |:--|--:|
 |user_id|integer|
@@ -64,6 +66,7 @@ question has many:answer
 
 ### answer
 answer belongs_to:question
+
 |column|type|
 |:--|--:|
 |user_id|references|
