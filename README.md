@@ -2,10 +2,12 @@
 ## 暮らしに潤いをもたらす女性を輝かせるウェブサイト
 
 ### users table
+
 users has many:contact
 users has many:workshop
 users has many:board references
 users has many:proposal
+
 |column|type|
 |:--|--:|
 |name|string|
@@ -16,6 +18,7 @@ users has many:proposal
 
 ### contact table
 contact belongs_to:users
+
 |column|type|
 |:--|--:|
 |name|string|
@@ -26,6 +29,7 @@ contact belongs_to:users
 
 ### work shop
 workshop belongs_to:users
+
 |column|type|
 |:--|--:|
 |shopname|integer|
@@ -37,6 +41,7 @@ workshop belongs_to:users
 
 ### proposal
 proposal belongs_to:workshop
+
 |column|type|
 |:--|--:|
 |users_id|references|
